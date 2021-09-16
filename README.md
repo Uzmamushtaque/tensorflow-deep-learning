@@ -17,7 +17,7 @@ This course will teach you foundations of deep learning and TensorFlow as well a
 - [Prerequisites](https://github.com/mrdbourke/tensorflow-deep-learning#prerequisites) (what skills you'll need to do this course)
 - [Exercises & Extra-curriculum](https://github.com/mrdbourke/tensorflow-deep-learning#-exercises---extra-curriculum) (challenges to practice what you've learned and resources to learn more)
 - [Ask a question](https://github.com/mrdbourke/tensorflow-deep-learning#ask-questions) (like to know more? go here)
-- [Status](https://github.com/mrdbourke/tensorflow-deep-learning#status) (there's still more to come!)
+- [Status](https://github.com/mrdbourke/tensorflow-deep-learning#status)
 - [Log](https://github.com/mrdbourke/tensorflow-deep-learning#log) (updates, changes and progress)
 
 ## Course materials
@@ -89,7 +89,7 @@ If no, go and do a beginner machine learning course and if you decide you want t
 
 To prevent the course from being 100+ hours (deep learning is a broad field), various external resources for different sections are recommended to puruse under your own discrestion.
 
-(solutions to come after the course is released... try the exercises out for yourself first!)
+You can find solutions to the exercises in [`extras/solutions/`](https://github.com/mrdbourke/tensorflow-deep-learning/tree/main/extras/solutions), there's a notebook per set of exercises (one for 00, 01, 02... etc). Thank you to [Ashik Shafi](https://github.com/ashikshafi08) for all of the efforts creating these.
 
 ---
 
@@ -239,6 +239,7 @@ To prevent the course from being 100+ hours (deep learning is a broad field), va
   * A graph showing the f1-scores of each class.
   * A visualization of the model making predictions on various images and comparing the predictions to the ground truth.
     * For example, plot a sample image from the test dataset and have the title of the plot show the prediction, the prediction probability and the ground truth label. 
+  * **Note:** To compare predicted labels to test labels, it might be a good idea when loading the test data to set `shuffle=False` (so the ordering of test data is preserved alongside the order of predicted labels).
 2. Take 3 of your own photos of food and use the Food Vision model to make predictions on them. How does it go? Share your images/predictions with the other students.
 3. Retrain the model (feature extraction and fine-tuning) we trained in this notebook, except this time use [`EfficientNetB4`](https://www.tensorflow.org/api_docs/python/tf/keras/applications/EfficientNetB4) as the base model instead of `EfficientNetB0`. Do you notice an improvement in performance? Does it take longer to train? Are there any tradeoffs to consider?
 4. Name one important benefit of mixed precision training, how does this benefit take place?
@@ -414,16 +415,15 @@ Contact [Daniel Bourke](mailto:daniel@mrdbourke.com) or [add a discussion](https
 
 ## Status
 
-As of: 10 Jul 2021
+As of: 14 Aug 2021
 
-* **Currently:** all videos recorded (time series and passing tensorflow developer certification) - editing and preparing for upload
-* **Video count:** 329/~330+, aiming to do ~10 videos per day during recording sessions
-* **Finished videos for:** 00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11
-* **Finished slides for notebooks:** 00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11
-* **Polished (prepared them for external use) notebooks:** 00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11 (livestreaming lots of this on Twitch: https://www.twitch.tv/mrdbourke)
-* **Finished 11/11 of code notebooks**
+Course completed! 🕺
+
+Any further updates/changes will be added below. 
   
 ## Log
+* 14 Aug 2021 - added a discussion with TensorFlow 2.6 updates and EfficientNetV2 notes: https://github.com/mrdbourke/tensorflow-deep-learning/discussions/166
+* 16 Jul 2021 - added 35 videos to ZTM Academy + Udemy versions of the course for time series and how to pass TensorFlow Developer Certificaiton
 * 10 Jul 2021 - added 29 edited time series videos to ZTM Academy + Udemy versions of the course, more to come soon
 * 07 Jul 2021 - recorded 5 videos for passing TensorFlow Developer Certification exam section - ALL VIDEOS FOR COURSE DONE!!! time to edit/upload! 🎉
 * 06 Jul 2021 - added guide to TensorFlow Certification Exam: https://github.com/mrdbourke/tensorflow-deep-learning/blob/main/11_passing_the_tensorflow_developer_certification_exam.md - going to record videos for it tomorrow
